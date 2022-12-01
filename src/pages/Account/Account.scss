@@ -1,0 +1,48 @@
+@use '../../styles/partials/variables' as *;
+
+img {
+    height: 3rem;
+    width: 3rem;
+}
+
+.account {
+    display: flex;
+    &__sidebar-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100vh;
+        padding: 0.5rem;
+        background-color: #f7f8fa;
+    }
+}
+
+.main {
+    &__header{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.footer-account {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    right:0;
+    margin: 0 4rem 1.5rem 0;
+
+    &__btn {
+        background-color: #085AC1;
+        border: none;
+        color: white;
+        padding: 1rem;
+    }
+}
+
+.example-img {
+    height: 100%;
+    width: 30%;
+}

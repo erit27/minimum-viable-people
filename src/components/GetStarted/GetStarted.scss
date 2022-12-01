@@ -1,0 +1,63 @@
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/reset' as *;
+@use '../../styles/partials/typography' as *;
+@use '../../styles/partials/variables' as *;
+
+.getStarted {
+  &__wrapper {
+    color: $white;
+    background-color: $darkblue;
+    margin: 1rem;
+    padding: 2rem 5rem 3rem 2rem;
+    border-radius: 6px;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  &__subtitle {
+    padding: 1rem 0;
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+  &__finePrint {
+    font-size: 0.75rem;
+    color: $lightgrey;
+    padding: 1rem 0;
+    width: 80%;
+    line-height: 1.25rem;
+  }
+  &__login {
+    display: flex;
+    flex-direction: row;
+    &--turq{
+      padding-left: 0.5rem;
+      text-decoration: none;
+      color: $turquoise;
+    }
+  }
+  &__formWrap {
+    display: flex;
+    flex-direction: column;
+  }
+  &__input {
+    margin: 0.25rem 0;
+    width: 85%;
+    padding: 1rem;
+    border-radius: 6px;
+    border: none;
+  }
+  &__button{
+    width: 85%;
+    background-color: $turquoise;
+    border-radius: 6px;
+    padding: 1rem;
+    margin: 0.25rem 0;
+    color: $white;
+    border: none;
+    &:hover {
+      font-weight: 700;
+    }
+  }
+}

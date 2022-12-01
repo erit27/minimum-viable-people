@@ -1,0 +1,11 @@
+.loadPage {
+  &__wrapper {
+    width: 100vw;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    & > * {
+      width: 50%;
+    }
+  }
+}
