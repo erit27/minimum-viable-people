@@ -8,15 +8,22 @@ import Example from "../../assets/image/example.png";
 import { useState } from "react";
 import Modal from "../../components/Modal/Modal";
 import ProgressBar from "../../components/ProgressBar/ProgressBar";
+import { useNavigate } from "react-router-dom";
+
 
 export default function Account() {
   const [openModal, setOpenModal] = useState(false);
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate('/')
+  }
 
   return (
     <div className="account">
       <div className="account__sidebar-left">
-        <img src={Logo} alt="logo" />
-        <img className="logout-img" src={Logout} alt="logout" />
+        <img onClick={handleClick} src={Logo} alt="logo" />
+        <img onClick={handleClick} className="logout-img" src={Logout} alt="logout" />
       </div>
       <div className="main">
         <div className="main__header">

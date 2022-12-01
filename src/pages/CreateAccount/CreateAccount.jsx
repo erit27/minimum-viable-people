@@ -1,8 +1,16 @@
 import '../../pages/CreateAccount/CreateAccount.scss';
 import Logo from '../../assets/logos/bench-logo.svg';
 import Image from '../../assets/image/copy to replace Lars 2.png';
+import { useNavigate } from 'react-router-dom';
 
 function CreateAccount (){
+
+  const navigate = useNavigate ();
+
+  const handleBtnClick = () =>{
+    navigate('/accounts')
+  }
+
   return (
     <div className='account'>
       <div className='account-main'>
@@ -21,7 +29,7 @@ function CreateAccount (){
         </form>
         <p className='account-agreement'>By signing up you accept our <span> End User License Agreement And Terms of Service.</span>
         </p>
-      <button className='account-btn'>NEXT</button>
+      <button onClick={handleBtnClick} className='account-btn'>NEXT</button>
 
       </div>
       <div className='account-img'>

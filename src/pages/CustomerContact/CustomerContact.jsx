@@ -1,8 +1,13 @@
 import '../../pages/CustomerContact/CustomerContact.scss';
 import Logo from '../../assets/logos/bench-logo.svg';
 import Image from '../../assets/image/copy to replace Lars 3.png';
+import { useNavigate } from 'react-router-dom';
 
 function CustomerContact (){
+  const navigate = useNavigate();
+  const handleBtnClick = () => {
+    navigate('/create-account')
+  }
   return (
     <div className='contact'>
       <div className='contact-main'>
@@ -25,7 +30,7 @@ function CustomerContact (){
             </div>
           </div>
         </form>
-          <button className='contact-btn'>NEXT</button>
+          <button onClick={handleBtnClick} className='contact-btn'>NEXT</button>
       </div>
       <div className='contact-img'>
         <img className='contact-img__lars' src={Image} alt="larsImage" />
