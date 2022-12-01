@@ -92,5 +92,11 @@
         margin-left: 10rem;
     }
 
-    &__button {}
+    &__button {
+        background-color: rgb(10, 90, 194);
+        color: rgb(255, 255, 255);
+        font-weight: 700;
+        padding: .625rem 1.25rem;
+
+    }
 }
