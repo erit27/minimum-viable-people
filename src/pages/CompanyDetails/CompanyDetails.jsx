@@ -14,7 +14,6 @@ function CompanyDetails() {
         <div className='container'>
             <div className='container-large'>
                 <div className='container-medium'>
-
                     <div className='company-details'>
                         <img src={logo} alt="Bench Company Logo" className='company-details__logo' onClick={navigateHome} />
 
@@ -66,18 +65,17 @@ function CompanyDetails() {
                                 <option value='4'>My business is new</option>
                                 <option value='5'>I'm not sure</option>
                             </select>
+                            <div>
+                                <footer className='next-page'>
+                                    <button className='next-page__button' onClick={navigateNext}>NEXT &#8594;</button>
+                                </footer>
+                            </div>
                         </div>
                     </div>
                     <div>
                         <img src={info} alt="" className='company-details__lars' />
                     </div>
                 </div>
-
-
-
-                <footer className='next-page'>
-                    <button className='next-page__button' onClick={navigateNext}>NEXT &#8594;</button>
-                </footer>
             </div>
         </div>
     </>)
