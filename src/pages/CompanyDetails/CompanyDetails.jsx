@@ -16,14 +16,16 @@ function CompanyDetails() {
                         <p className='company-details__sub-info'>Select country your business is registered in</p>
                         <div>
                             <select className='company-details__selector'>
-                                <option>America</option>
-                                <option>Canada</option>
+                                <option value="" selected disabled hidden>Select</option>
+                                <option value='1'>America</option>
+                                <option value='2'>Canada </option>
                             </select>
                         </div>
                         <h2 className='company-details__sub'>COMPANY SIZE</h2>
                         <p className='company-details__sub-info'>Select number of owners, employees, and contractors</p>
                         <div>
                             <select className='company-details__selector'>
+                                <option value="" selected disabled hidden> Select</option>
                                 <option>1</option>
                                 <option>2-5</option>
                                 <option>6-10</option>
@@ -36,6 +38,7 @@ function CompanyDetails() {
                         <p className='company-details__sub-info'>Select average monthly revenue before deductions</p>
                         <div>
                             <select className='company-details__selector'>
+                                <option value="" selected disabled hidden> Select</option>
                                 <option>$0 (Pre-revenue)</option>
                                 <option>$1-$1,000</option>
                                 <option>$1,000-$10,0000</option>
@@ -48,6 +51,7 @@ function CompanyDetails() {
                         <p className='company-details__sub-info'>Select most recent business income tax filing</p>
                         <div>
                             <select className='company-details__selector'>
+                                <option value="" selected disabled hidden> Select</option>
                                 <option>Tax year 2021</option>
                                 <option>Tax year 2020</option>
                                 <option>Tax year 2019 or prior</option>
