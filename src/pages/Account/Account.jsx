@@ -1,12 +1,23 @@
 import "./Account.scss";
+import Safe from "../../assets/icons/safe.png";
+import Wallet from "../../assets/icons/wallet.png";
+import Lock from "../../assets/icons/lock.png";
+import Logout from "../../assets/icons/logout.png";
+import Logo from "../../assets/icons/logo.png";
+import Example from "../../assets/image/example.png"
+import { useState } from "react";
+import Modal from "../../components/Modal/Modal";
+
 export default function Account() {
+    const [openModal, setOpenModal] = useState(false)
   return (
-    <div>
-      <div className="">
-        <img src="" alt="logo" />
-        <img src="" alt="logout" />
+    <div className="account">
+      <div className="account__sidebar-left">
+        <img src={Logo} alt="logo" />
+        <img src={Logout} alt="logout" />
       </div>
-      <div>
+    <div className="main">
+      <div className="main__header">
         <h1>Great, now let's link your accounts</h1>
         <h3>
           We'll be calling you on the next business day to help you set up your
@@ -19,15 +30,15 @@ export default function Account() {
         </p>
       </div>
       <div>
-        <img src="" alt="safe" />
+        <img src={Safe} alt="safe" />
         <p>We never store your bank account credentials</p>
       </div>
       <div>
-        <img src="" alt="lock" />
+        <img src={Lock} alt="lock" />
         <p>We encrypt data with the same level of security as online banking</p>
       </div>
       <div>
-        <img src="" alt="wallet" />
+        <img src={Wallet} alt="wallet" />
         <p>You'll have the ability to disconnect personal accounts</p>
       </div>
       <div>
@@ -37,6 +48,13 @@ export default function Account() {
           banking? We can help wtih that too!
         </p>
       </div>
+      </div>
+      <img className="example-img" src={Example} alt="example app" />
+      <footer className="footer-account">
+        <p>READY FOR A CHAT</p>
+        <button className="footer-account__btn"> LINK BUSINESS ACCOUNTS</button>
+      </footer>
+      {/* <Modal/> */}
     </div>
   );
 }
