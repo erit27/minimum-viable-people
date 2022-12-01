@@ -21,6 +21,7 @@ function CreateAccount (){
         </form>
         <p className='account-agreement'>By signing up you accept our <span> End User License Agreement And Terms of Service.</span>
         </p>
+        
       <button className='account-btn'>NEXT</button>
 
       </div>
