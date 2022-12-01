@@ -65,7 +65,7 @@ export default function Account() {
       <footer className="footer-account">
         <ProgressBar />
         <div className="footer-account__section">
-          <p className="footer-account__link">TRIAL DASHBOARD</p>
+          <p className="footer-account__btn">TRIAL DASHBOARD</p>
           <button
             onClick={() => setOpenModal(true)}
             className="footer-account__btn"
