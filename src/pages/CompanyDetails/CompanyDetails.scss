@@ -3,17 +3,33 @@
 @use '../../styles/partials/variables' as *;
 @use '../../styles/partials/typography' as *;
 
-.container-large {
-    display: flex;
-}
+.container {
+    background-color: rgb(247, 248, 250);
+    height: 100vh;
+    padding: 2rem 5rem;
 
+    &-large {
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+
+
+    }
+}
 
 
 .company-details {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    max-width: 36.25rem;
+    margin: 0px auto;
+    padding-top: 2rem;
 
+    &__sub {
+        font-size: 0.875rem;
+        font-weight: 450;
+    }
 
     &__logo {
         // height: 2rem;
@@ -22,18 +38,15 @@
     }
 
     &__lars {
-        display: none;
-
-        @include desktop {
-            display: block;
-        }
+        background: url(../../assets/image/lars-full.jpg);
+        width: 24.75rem;
+        padding-top: 50rem;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-position: 50% -50%;
 
         &-title {
-            display: none;
-
-            @include desktop {
-                display: block;
-            }
+            padding: 1rem;
         }
     }
 
@@ -43,4 +56,15 @@
         line-height: 2.25rem;
         padding-bottom: 1rem;
     }
+
+    &__description {
+        font-size: 1rem;
+        font-weight: normal;
+        padding-bottom: 1rem;
+    }
+}
+
+.next-page {
+    margin-top: 30rem;
+
 }
