@@ -1,4 +1,11 @@
-.test {
-  color: black;
-  font-size: 2rem;
+.loadPage {
+  &__wrapper {
+    width: 100vw;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    & > * {
+      width: 50%;
+    }
+  }
 }

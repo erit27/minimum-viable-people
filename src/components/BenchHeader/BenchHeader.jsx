@@ -6,11 +6,8 @@ export default function BenchHeader() {
   return (
     <>
     <div className="header__wrapper">
+    <Link to='/'><img src={benchLogo} alt="bench logo" className='header__logo' /></Link>
     </div>
-    <Link to='/'>
-      <img src={benchLogo} alt="bench logo" />
-    </Link>
-    <img src="../../assets/logos/bench_logo.jpeg" alt="" />
     </>
   )
 }
