@@ -1,6 +1,14 @@
 import './CompanyDetails.scss'
 import logo from '../../assets/logos/bench-logo.svg'
 import lars from '../../assets/image/copy to replace Lars 1.png'
+import { useNavigate } from 'react-router-dom/dist'
+const navigate = useNavigate
+const navigateHome = () => {
+    navigate('/')
+}
+const navigateNext = () => {
+    navigate('/book/')
+}
 function CompanyDetails() {
     return (<>
         <div className='container'>
@@ -8,7 +16,7 @@ function CompanyDetails() {
                 <div className='container-medium'>
 
                     <div className='company-details'>
-                        <img src={logo} alt="Bench Company Logo" className='company-details__logo' />
+                        <img src={logo} alt="Bench Company Logo" className='company-details__logo' onClick={navigateHome} />
 
                         <h1 className='company-details__title'>Tell us about your business</h1>
                         <p className='company-details__description'>We'd like to learn more about your business so that we can provide you with the best experience possible.</p>
@@ -68,7 +76,7 @@ function CompanyDetails() {
 
 
                 <footer className='next-page'>
-                    <button className='next-page__button'>NEXT &#8594;</button>
+                    <button className='next-page__button' onClick={navigateNext}>NEXT &#8594;</button>
                 </footer>
             </div>
         </div>
