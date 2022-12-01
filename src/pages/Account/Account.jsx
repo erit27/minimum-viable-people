@@ -11,6 +11,7 @@ import ProgressBar from "../../components/ProgressBar/ProgressBar";
 
 export default function Account() {
   const [openModal, setOpenModal] = useState(false);
+
   return (
     <div className="account">
       <div className="account__sidebar-left">
@@ -21,13 +22,13 @@ export default function Account() {
         <div className="main__header">
           <h1>Great, now let's link your accounts</h1>
           <h3>
-            We'll be calling you on the next business day to help you set up
-            your free trial.
+            We'll be calling you on the next business day to help you set up your
+            free trial.
           </h3>
           <p>
-            In the mean time, if you have business specific checkings, savings,
-            or credit cards we need to set those up. We'll use these connections
-            to complete your free month of bookkeeping.
+            In the mean time, if you have business specific checkings, savings, or
+            credit cards we need to set those up. We'll use these connections to
+            complete your free month of bookkeeping.
           </p>
         </div>
         <div>
@@ -36,9 +37,8 @@ export default function Account() {
         </div>
         <div>
           <img src={Lock} alt="lock" />
-          <p>
-            We encrypt data with the same level of security as online banking
-          </p>
+
+          <p>We encrypt data with the same level of security as online banking</p>
         </div>
         <div>
           <img src={Wallet} alt="wallet" />
@@ -70,3 +70,4 @@ export default function Account() {
     </div>
   );
 }
+
