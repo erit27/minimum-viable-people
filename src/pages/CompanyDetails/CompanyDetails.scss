@@ -3,19 +3,22 @@
 @use '../../styles/partials/variables' as *;
 @use '../../styles/partials/typography' as *;
 
-.container {
-    background-color: rgb(247, 248, 250);
-    height: 100vh;
-    padding: 2rem 5rem;
 
-    &-large {
+.container {
+    &-medium {
         display: flex;
         justify-content: space-between;
         background-color: white;
 
+    }
 
+    &-large {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
     }
 }
+
 
 
 .company-details {
@@ -29,6 +32,14 @@
     &__sub {
         font-size: 0.875rem;
         font-weight: 450;
+        letter-spacing: .15em;
+        margin-bottom: .5rem;
+
+        &-info {
+            color: rgb(142, 145, 152);
+            font-size: .875rem;
+            padding: 0.125rem 0rem;
+        }
     }
 
     &__logo {
@@ -38,16 +49,8 @@
     }
 
     &__lars {
-        background: url(../../assets/image/lars-full.jpg);
         width: 24.75rem;
-        padding-top: 50rem;
         height: 100%;
-        background-repeat: no-repeat;
-        background-position: 50% -50%;
-
-        &-title {
-            padding: 1rem;
-        }
     }
 
     &__title {
@@ -59,12 +62,35 @@
 
     &__description {
         font-size: 1rem;
-        font-weight: normal;
+        font-weight: 600;
         padding-bottom: 1rem;
+    }
+
+    &__selector {
+        color: rgb(90, 94, 104);
+        height: 3.75rem;
+        width: 35rem;
+        border-color: rgb(228, 230, 233);
+        border-radius: .5rem;
+        border-style: solid;
+        border-width: 1.5px;
+        background-color: rgb(247, 248, 250);
+        margin-bottom: 1rem;
     }
 }
 
 .next-page {
-    margin-top: 30rem;
 
+    border-top: 1px solid black;
+    padding-top: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 28rem;
+
+    &__title {
+        margin-left: 10rem;
+    }
+
+    &__button {}
 }
