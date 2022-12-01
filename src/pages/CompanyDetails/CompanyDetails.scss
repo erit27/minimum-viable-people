@@ -31,19 +31,22 @@
     flex-direction: column;
     align-items: flex-start;
     max-width: 36.25rem;
-    margin: 0px auto;
+    margin: 0px;
     padding-top: 2rem;
+
 
     &__sub {
         font-size: 0.875rem;
         font-weight: 450;
         letter-spacing: .15em;
         margin-bottom: .5rem;
+        padding-left: 8rem;
 
         &-info {
             color: rgb(142, 145, 152);
             font-size: .875rem;
             padding: 0.125rem 0rem;
+            padding-left: 8rem;
         }
     }
 
@@ -51,6 +54,10 @@
         // height: 2rem;
         width: 8.577rem;
         padding-bottom: 1rem;
+
+        margin-left: 7rem;
+
+
     }
 
     &__lars {
@@ -63,12 +70,14 @@
         font-weight: 700;
         line-height: 2.25rem;
         padding-bottom: 1rem;
+        padding-left: 8rem;
     }
 
     &__description {
         font-size: 1rem;
         font-weight: 600;
         padding-bottom: 1rem;
+        padding-left: 8rem;
     }
 
     &__selector {
@@ -82,6 +91,7 @@
         background-color: rgb(247, 248, 250);
         margin-bottom: 1rem;
         padding-left: .5rem;
+        margin-left: 8rem;
     }
 }
 
@@ -91,10 +101,11 @@
     padding-top: 2rem;
     width: 100%;
     display: flex;
-    padding-right: 10rem;
+    padding-right: 15rem;
     height: 5rem;
     justify-content: flex-end;
     margin-top: 3rem;
+
 
 
     &__title {
@@ -107,12 +118,10 @@
         font-weight: 700;
         padding: .625rem 2rem;
         font-size: .875rem;
-        margin-left: 18rem;
+        margin-left: 26rem;
         border: none;
         border-radius: .5rem;
         width: 10rem;
         height: 2.5rem;
-
-
     }
 }
