@@ -29,13 +29,10 @@ export default function Account() {
         <div className="main__header">
           <h1 className="main__header--heading">Great, now let's link your accounts</h1>
           <h3 className="main__header--subheading">
-            TEXT TO CHANGE: We'll be calling you on the next business day to help you set up your
-            free trial.
+          To get full use of the Bench platform, we recommended you link your bank account to your dashboard.
           </h3>
           <p>
-            In the mean time, if you have business specific checkings, savings, or
-            credit cards we need to set those up. We'll use these connections to
-            complete your free month of bookkeeping.
+            Please note:
           </p>
         </div>
         <div className="main__fact">
