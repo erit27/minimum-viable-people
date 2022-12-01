@@ -1,0 +1,30 @@
+
+
+.modal-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(210,210,210, .5);
+}
+
+.modal {
+    height: 70vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+
+    &__btn {
+        background-color: black;
+        color: white;
+        border: none;
+        padding: 1rem 5rem;
+        border-radius: 4px;
+    }
+}
