@@ -6,7 +6,7 @@ export default function GetStarted() {
 
   function handleSubmit(event) {
     event.preventDefault();
-    navigate('/signup-bench-free-month-bookkeeping')
+    navigate('/company-details')
   }
 
   return (

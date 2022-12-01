@@ -4,12 +4,14 @@ import Wallet from "../../assets/icons/wallet.png";
 import Lock from "../../assets/icons/lock.png";
 import Logout from "../../assets/icons/logout.png";
 import Logo from "../../assets/icons/logo.png";
-import Example from "../../assets/image/example.png"
+import Example from "../../assets/image/example.png";
 import { useState } from "react";
 import Modal from "../../components/Modal/Modal";
+import ProgressBar from "../../components/ProgressBar/ProgressBar";
 
 export default function Account() {
-  const [openModal, setOpenModal] = useState(false)
+  const [openModal, setOpenModal] = useState(false);
+
   return (
     <div className="account">
       <div className="account__sidebar-left">
@@ -35,6 +37,7 @@ export default function Account() {
         </div>
         <div>
           <img src={Lock} alt="lock" />
+
           <p>We encrypt data with the same level of security as online banking</p>
         </div>
         <div>
@@ -51,10 +54,19 @@ export default function Account() {
       </div>
       <img className="example-img" src={Example} alt="example app" />
       <footer className="footer-account">
-        <p>READY FOR A CHAT</p>
-        <button className="footer-account__btn"> LINK BUSINESS ACCOUNTS</button>
+        <ProgressBar/>
+        <div className="footer-account__section">
+        <p className="footer-account__link">READY FOR A CHAT</p>
+        <button
+          onClick={() => setOpenModal(true)}
+          className="footer-account__btn"
+        >
+          {" "}
+          LINK BUSINESS ACCOUNTS
+        </button>
+        </div>
       </footer>
-      {/* <Modal/> */}
+      {openModal && <Modal click={setOpenModal} />}
     </div>
   );
 }
