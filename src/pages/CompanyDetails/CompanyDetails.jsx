@@ -1,6 +1,6 @@
 import './CompanyDetails.scss'
-import logo from '../assets/logos/bench_logo.jpeg'
-import lars from '../assets/image/lars-full.jpg'
+import logo from '../../assets/logos/bench_logo.jpeg'
+import lars from '../../assets/image/lars-full.jpg'
 function CompanyDetails() {
     return (<>
         <div className='container-large'>
