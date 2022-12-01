@@ -1,6 +1,6 @@
 import './CompanyDetails.scss'
 import logo from '../../assets/logos/bench-logo.svg'
-import lars from '../../assets/image/lars-full.jpg'
+import lars from '../../assets/image/copy to replace Lars 1.png'
 function CompanyDetails() {
     return (<>
         <div className='container'>
@@ -16,7 +16,7 @@ function CompanyDetails() {
                         <p className='company-details__sub-info'>Select country your business is registered in</p>
                         <div>
                             <select className='company-details__selector'>
-                                <option value="" selected disabled hidden>Select</option>
+                                <option selected disabled hidden>Select</option>
                                 <option value='1'>America</option>
                                 <option value='2'>Canada </option>
                             </select>
@@ -26,12 +26,12 @@ function CompanyDetails() {
                         <div>
                             <select className='company-details__selector'>
                                 <option value="" selected disabled hidden> Select</option>
-                                <option>1</option>
-                                <option>2-5</option>
-                                <option>6-10</option>
-                                <option>11-25</option>
-                                <option>25+</option>
-                                <option>I'm not sure</option>
+                                <option value='1'>1</option>
+                                <option value='2'>2-5</option>
+                                <option value='3'>6-10</option>
+                                <option value='4'>11-25</option>
+                                <option value='5'>25+</option>
+                                <option value='6'>I'm not sure</option>
                             </select>
                         </div>
                         <h2 className='company-details__sub'>MONTHLY REVENUE</h2>
@@ -39,12 +39,12 @@ function CompanyDetails() {
                         <div>
                             <select className='company-details__selector'>
                                 <option value="" selected disabled hidden> Select</option>
-                                <option>$0 (Pre-revenue)</option>
-                                <option>$1-$1,000</option>
-                                <option>$1,000-$10,0000</option>
-                                <option>$10,000-$100,000</option>
-                                <option>More than $100,000</option>
-                                <option>I'm not sure</option>
+                                <option value='1'>$0 (Pre-revenue)</option>
+                                <option value='2'>$1-$1,000</option>
+                                <option value='3'>$1,000-$10,0000</option>
+                                <option value='4'>$10,000-$100,000</option>
+                                <option value='5'>More than $100,000</option>
+                                <option value='6'>I'm not sure</option>
                             </select>
                         </div>
                         <h2 className='company-details__sub'>LAST TAX RETURN</h2>
@@ -52,11 +52,11 @@ function CompanyDetails() {
                         <div>
                             <select className='company-details__selector'>
                                 <option value="" selected disabled hidden> Select</option>
-                                <option>Tax year 2021</option>
-                                <option>Tax year 2020</option>
-                                <option>Tax year 2019 or prior</option>
-                                <option>My business is new</option>
-                                <option>I'm not sure</option>
+                                <option value='1'>Tax year 2021</option>
+                                <option value='2'>Tax year 2020</option>
+                                <option value='3'>Tax year 2019 or prior</option>
+                                <option value='4'>My business is new</option>
+                                <option value='5'>I'm not sure</option>
                             </select>
                         </div>
                     </div>
