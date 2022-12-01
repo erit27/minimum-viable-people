@@ -3,28 +3,102 @@
 @use '../../styles/partials/variables' as *;
 @use '../../styles/partials/typography' as *;
 
-.container-large {
-    display: flex;
+
+.container {
+    &-medium {
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+
+    }
+
+    &-large {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
 }
 
-.container-small {
-    padding: 0 .5rem;
-}
+
 
 .company-details {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    max-width: 36.25rem;
+    margin: 0px auto;
+    padding-top: 2rem;
 
+    &__sub {
+        font-size: 0.875rem;
+        font-weight: 450;
+        letter-spacing: .15em;
+        margin-bottom: .5rem;
+
+        &-info {
+            color: rgb(142, 145, 152);
+            font-size: .875rem;
+            padding: 0.125rem 0rem;
+        }
+    }
 
     &__logo {
-        width: 10rem;
+        // height: 2rem;
+        width: 8.577rem;
+        padding-bottom: 1rem;
     }
 
     &__lars {
-        display: none;
+        width: 24.75rem;
+        height: 100%;
+    }
 
-        @include desktop {
-            display: block;
-        }
+    &__title {
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 2.25rem;
+        padding-bottom: 1rem;
+    }
+
+    &__description {
+        font-size: 1rem;
+        font-weight: 600;
+        padding-bottom: 1rem;
+    }
+
+    &__selector {
+        color: rgb(90, 94, 104);
+        height: 3.75rem;
+        width: 35rem;
+        border-color: rgb(228, 230, 233);
+        border-radius: .5rem;
+        border-style: solid;
+        border-width: 1.5px;
+        background-color: rgb(247, 248, 250);
+        margin-bottom: 1rem;
+    }
+}
+
+.next-page {
+
+    border-top: 1px solid black;
+    padding-top: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 28rem;
+
+    &__title {
+        margin-left: 10rem;
+    }
+
+    &__button {
+        background-color: rgb(10, 90, 194);
+        color: rgb(255, 255, 255);
+        font-weight: 700;
+        padding: .625rem 1.25rem;
+
+
+
     }
 }
