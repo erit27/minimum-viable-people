@@ -1,11 +1,10 @@
 import './App.scss';
+import LoadingPage from './pages/LoadingPage/LoadingPage';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-      
-      </header>
+      <LoadingPage />
     </div>
   );
 }
