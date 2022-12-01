@@ -1,6 +1,7 @@
 import './CompanyDetails.scss'
 import logo from '../../assets/logos/bench-logo.svg'
 import lars from '../../assets/image/lars-full.jpg'
+import ProgressBar from '../../components/ProgressBar/ProgressBar'
 function CompanyDetails() {
     return (<>
         <div className='container'>
@@ -64,6 +65,7 @@ function CompanyDetails() {
 
 
                 <footer className='next-page'>
+                    <ProgressBar/>
                     <button className='next-page__button'>NEXT &#8594;</button>
                 </footer>
             </div>

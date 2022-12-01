@@ -16,12 +16,12 @@ export default function Account() {
     <div className="account">
       <div className="account__sidebar-left">
         <img src={Logo} alt="logo" />
-        <img src={Logout} alt="logout" />
+        <img className="logout-img" src={Logout} alt="logout" />
       </div>
       <div className="main">
         <div className="main__header">
-          <h1>Great, now let's link your accounts</h1>
-          <h3>
+          <h1 className="main__header--heading">Great, now let's link your accounts</h1>
+          <h3 className="main__header--subheading">
             We'll be calling you on the next business day to help you set up your
             free trial.
           </h3>
@@ -31,21 +31,21 @@ export default function Account() {
             complete your free month of bookkeeping.
           </p>
         </div>
-        <div>
+        <div className="main__fact">
           <img src={Safe} alt="safe" />
-          <p>We never store your bank account credentials</p>
+          <p className="main__fact--text">We never store your bank account credentials</p>
         </div>
-        <div>
+        <div className="main__fact">
           <img src={Lock} alt="lock" />
 
-          <p>We encrypt data with the same level of security as online banking</p>
+          <p className="main__fact--text">We encrypt data with the same level of security as online banking</p>
         </div>
-        <div>
+        <div className="main__fact">
           <img src={Wallet} alt="wallet" />
-          <p>You'll have the ability to disconnect personal accounts</p>
+          <p className="main__fact--text">You'll have the ability to disconnect personal accounts</p>
         </div>
-        <div>
-          <p>
+        <div className="main__block">
+          <p className="main__block--text">
             Can't find your institution, or having trouble linking? No worries,
             we'll cover this on our call. Need to set up a business specific
             banking? We can help wtih that too!
