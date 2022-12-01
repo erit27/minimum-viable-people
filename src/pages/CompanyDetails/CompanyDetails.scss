@@ -7,17 +7,18 @@
     display: flex;
 }
 
-.container-small {
-    padding: 0 .5rem;
-}
+
 
 .company-details {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
 
 
     &__logo {
-        width: 10rem;
+        // height: 2rem;
+        width: 8.577rem;
+        padding-bottom: 1rem;
     }
 
     &__lars {
@@ -26,5 +27,20 @@
         @include desktop {
             display: block;
         }
+
+        &-title {
+            display: none;
+
+            @include desktop {
+                display: block;
+            }
+        }
+    }
+
+    &__title {
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 2.25rem;
+        padding-bottom: 1rem;
     }
 }
