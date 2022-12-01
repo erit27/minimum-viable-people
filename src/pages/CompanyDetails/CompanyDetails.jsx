@@ -1,23 +1,31 @@
 import './CompanyDetails.scss'
 import logo from '../../assets/logos/bench-logo.svg'
-import lars from '../../assets/image/lars-full.jpg'
 import ProgressBar from '../../components/ProgressBar/ProgressBar'
-import progress from '../../assets/image/Property 1=stage 1.png'
 import info from '../../assets/image/copy to replace Lars 1.png'
 import { useNavigate} from 'react-router-dom/dist';
+import { useState } from 'react'
+import ErrorMessage from '../../components/ErrorMessage/ErrorMessage'
 
 function CompanyDetails() {
+    const [error, setError] = useState(false);
 
     const navigate = useNavigate();
-        const navigateHome = () => {
-            navigate('/')
-        }
-        function handleSubmit(event) {
-            event.preventDefault();
-            navigate('/book')
-        }
-        const navigateNext = () => {
-            navigate('/book')
+    const navigateHome = () => {
+        navigate('/')
+    }
+    function handleSubmit(event) {
+        event.preventDefault();
+        navigate('/book')
+    }
+
+
+        const handleError = (e) =>{
+            if(e.target.value === '2'){
+                setError(true)
+            }
+            else {
+                setError(false)
+            }
         }
 
     return (<>
@@ -33,11 +41,12 @@ function CompanyDetails() {
                         <p className='company-details__sub-info'>Select country your business is registered in</p>
                         <form action="submit" onSubmit={handleSubmit}>
                             <div>
-                                <select className='company-details__selector'>
+                                <select onChange={(e)=>handleError(e)} className={`company-details__selector ${error === true? "invalid":null}`}>
                                     <option selected disabled hidden>Select</option>
                                     <option value='1'>America</option>
                                     <option value='2'>Canada </option>
                                 </select>
+                                <ErrorMessage display={error}/>
                             </div>
                             <h2 className='company-details__sub'>COMPANY SIZE</h2>
                             <p className='company-details__sub-info'>Select number of owners, employees, and contractors</p>
@@ -76,14 +85,14 @@ function CompanyDetails() {
                                     <option value='4'>My business is new</option>
                                     <option value='5'>I'm not sure</option>
                                 </select>
-                                <div>
 
-                                    <footer className='next-page'>
-                                    <ProgressBar/>
-                                        <button type='submit' className='next-page__button' >NEXT &#8594;</button>
-                                    </footer>
-                                </div>
 
+                                <footer className='next-page'>
+                                    <div className='progress'>
+                                        <ProgressBar />
+                                    </div>
+                                    <button type='submit' className='next-page__button' >NEXT</button>
+                                </footer>
                             </div>
                         </form>
                     </div>
@@ -91,7 +100,6 @@ function CompanyDetails() {
                         <img src={info} alt="" className='company-details__lars' />
                     </div>
                 </div>
-
             </div>
         </div>
     </>)

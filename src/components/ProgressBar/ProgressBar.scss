@@ -13,7 +13,9 @@
     justify-content: space-evenly;
     flex: 1;
     
-  
+  }
+  .step-name {
+    color: #8E9297;
   }
   
   .stepper-item::before {
@@ -54,14 +56,15 @@
   }
   
   .stepper-item.completed .step-counter {
-    background-color: #4bb543;
+    background-color: #3E898B;
+    color: white;
     
 }
   
   .stepper-item.completed::after {
     position: absolute;
     content: "";
-    border-bottom: 2px solid #4bb543;
+    border-bottom: 2px solid #3E898B;
     width: 100%;.stepper-wrapper {
   margin-top: auto;
   display: flex;
