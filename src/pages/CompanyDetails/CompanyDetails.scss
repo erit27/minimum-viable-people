@@ -75,6 +75,7 @@
         padding-left: 8rem;
     }
 
+
     &__description {
         font-size: 1rem;
         font-weight: 600;
@@ -94,7 +95,12 @@
         margin-bottom: 1rem;
         padding-left: .5rem;
         margin-left: 8rem;
+
     }
+}
+.invalid{
+    border: 1px solid red;
+    outline: none;
 }
 
 .next-page {

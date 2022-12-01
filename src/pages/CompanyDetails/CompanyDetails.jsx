@@ -2,9 +2,12 @@ import './CompanyDetails.scss'
 import logo from '../../assets/logos/bench-logo.svg'
 import ProgressBar from '../../components/ProgressBar/ProgressBar'
 import info from '../../assets/image/copy to replace Lars 1.png'
-import { useNavigate } from 'react-router-dom/dist';
+import { useNavigate} from 'react-router-dom/dist';
+import { useState } from 'react'
+import ErrorMessage from '../../components/ErrorMessage/ErrorMessage'
 
 function CompanyDetails() {
+    const [error, setError] = useState(false);
 
     const navigate = useNavigate();
     const navigateHome = () => {
@@ -15,6 +18,15 @@ function CompanyDetails() {
         navigate('/book')
     }
 
+
+        const handleError = (e) =>{
+            if(e.target.value === '2'){
+                setError(true)
+            }
+            else {
+                setError(false)
+            }
+        }
 
     return (<>
         <div className='container'>
@@ -29,11 +41,12 @@ function CompanyDetails() {
                         <p className='company-details__sub-info'>Select country your business is registered in</p>
                         <form action="submit" onSubmit={handleSubmit}>
                             <div>
-                                <select className='company-details__selector'>
+                                <select onChange={(e)=>handleError(e)} className={`company-details__selector ${error === true? "invalid":null}`}>
                                     <option selected disabled hidden>Select</option>
                                     <option value='1'>America</option>
                                     <option value='2'>Canada </option>
                                 </select>
+                                <ErrorMessage display={error}/>
                             </div>
                             <h2 className='company-details__sub'>COMPANY SIZE</h2>
                             <p className='company-details__sub-info'>Select number of owners, employees, and contractors</p>
