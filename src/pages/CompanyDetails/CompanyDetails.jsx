@@ -1,6 +1,6 @@
 import './CompanyDetails.scss'
 import logo from '../../assets/logos/bench-logo.svg'
-import lars from '../../assets/image/lars-full.jpg'
+import info from '../../assets/image/copy to replace Lars 1.png'
 function CompanyDetails() {
     return (<>
         <div className='container'>
@@ -57,7 +57,7 @@ function CompanyDetails() {
                         </div>
                     </div>
                     <div>
-                        <img src={lars} alt="" className='company-details__lars' />
+                        <img src={info} alt="" className='company-details__lars' />
                     </div>
                 </div>
 
