@@ -70,7 +70,6 @@ export default function Account() {
             onClick={() => setOpenModal(true)}
             className="footer-account__btn"
           >
-            {" "}
             LINK BUSINESS ACCOUNTS
           </button>
         </div>
