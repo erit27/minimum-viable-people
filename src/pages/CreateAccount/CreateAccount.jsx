@@ -1,5 +1,5 @@
 import '../../pages/CreateAccount/CreateAccount.scss';
-import Logo from '../../assets/logos/bench_logo.jpeg';
+import Logo from '../../assets/logos/bench-logo.svg';
 import Image from '../../assets/image/lars-full.jpg';
 
 function CreateAccount (){
@@ -21,12 +21,15 @@ function CreateAccount (){
         </form>
         <p className='account-agreement'>By signing up you accept our <span> End User License Agreement And Terms of Service.</span>
         </p>
+      <button className='account-btn'>NEXT</button>
+
       </div>
       <div className='account-img'>
         <img className='account-img__lars' src={Image} alt="larsImage" />
       </div>
     </div>
-      // <button>NEXT</button>
+    
+    
     
   )
 }

@@ -7,10 +7,12 @@
 .account{
   display: flex;
   flex-direction: row;
+  justify-content: center;
   width: 100%;
+
   &-main{
     padding: 1rem 2rem 4rem 4rem;
-    width: 100%;
+    max-width: 75%;
   }
   &-logo{
     width: 5rem;
@@ -22,7 +24,7 @@
   }
   &-paragraph{
     padding-bottom: 1rem;
-    font-weight: 500;
+    font-size: medium;
   }
   &-form{
     width: 100%;
@@ -47,24 +49,33 @@
     padding: 1rem;
     border: 1.5px solid $white;
     border-radius: 8px;
-    box-shadow: none;
   }
 
   &-img{
-    height: 100vh;
     background-color:$white;
-   
-    
+
     &__lars{
+      height: 100vh;
       width: 100%;
       padding-top: 6rem;
+
     }
   }
   &-agreement{
-    padding-top: 1rem;
     font-size: small;
+    padding-top: 1rem;
   }
-  
+  &-btn{
+    
+    width: 15%;
+    height: 2.5rem;
+    background-color: $skyblue;
+    color: $white;
+    border: none;
+    border-radius: 4px;
+    margin-top: 4rem;
+    float: right;
+  }
 }
 
 span{
