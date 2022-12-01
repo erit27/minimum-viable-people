@@ -1,0 +1,30 @@
+@use '../styles/partials/mixins' as *;
+@use '../styles/partials/reset' as *;
+@use '../styles/partials/variables' as *;
+@use '../styles/partials/typography' as *;
+
+.container-large {
+    display: flex;
+}
+
+.container-small {
+    padding: 0 .5rem;
+}
+
+.company-details {
+    display: flex;
+    flex-direction: column;
+
+
+    &__logo {
+        width: 10rem;
+    }
+
+    &__lars {
+        display: none;
+
+        @include desktop {
+            display: block;
+        }
+    }
+}
