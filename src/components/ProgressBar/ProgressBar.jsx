@@ -55,15 +55,15 @@ export default function ProgressBar (){
       </Link>
       <Link to='/book' className={twoOn? "stepper-item completed": "stepper-item"}>
         <div className="step-counter">2</div>
-        <div className="step-name">Contact Info</div>
+        <div className="step-name">Business Verification</div>
       </Link>
       <Link to='/create-account' className={threeOn? "stepper-item completed": "stepper-item"}>
         <div className="step-counter">3</div>
-        <div className="step-name">Create Account</div>
+        <div className="step-name">Personal Details</div>
       </Link>
       <Link to='/accounts' className={fourOn? "stepper-item completed": "stepper-item"}>
         <div className="step-counter">4</div>
-        <div className="step-name">Link Banking</div>
+        <div className="step-name">Get Started</div>
       </Link>
     </div>
     )

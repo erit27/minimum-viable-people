@@ -4,9 +4,10 @@ import lars from '../../assets/image/lars-full.jpg'
 import ProgressBar from '../../components/ProgressBar/ProgressBar'
 import progress from '../../assets/image/Property 1=stage 1.png'
 import info from '../../assets/image/copy to replace Lars 1.png'
-import { useNavigate } from 'react-router-dom/dist'
+import { useNavigate} from 'react-router-dom/dist';
 
 function CompanyDetails() {
+
     const navigate = useNavigate();
         const navigateHome = () => {
             navigate('/')
@@ -18,6 +19,7 @@ function CompanyDetails() {
         const navigateNext = () => {
             navigate('/book')
         }
+
     return (<>
         <div className='container'>
             <div className='container-large'>
