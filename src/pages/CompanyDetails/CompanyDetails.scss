@@ -3,12 +3,17 @@
 @use '../../styles/partials/variables' as *;
 @use '../../styles/partials/typography' as *;
 
+.progress {
+    padding-top: 1rem;
+    width: 80%
+}
 
 .container {
     &-medium {
         display: flex;
         justify-content: space-between;
         background-color: white;
+        height: 100vh;
 
     }
 
