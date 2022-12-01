@@ -1,6 +1,6 @@
 import '../../pages/CreateAccount/CreateAccount.scss';
 import Logo from '../../assets/logos/bench-logo.svg';
-import Image from '../../assets/image/lars-full.jpg';
+import Image from '../../assets/image/copy to replace Lars 2.png';
 
 function CreateAccount (){
   return (
