@@ -1,12 +1,19 @@
 import './App.scss';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Account from './pages/Account/Account';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-      
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/'>Hello</Route>
+        <Route path='/signup-bench-free-month-bookkeeping' element={''}></Route>
+        <Route path='/company-details' element={''}></Route>
+        <Route path='/book' element={''}></Route>
+        <Route path='/create-account' element={''}></Route>
+        <Route path='/accounts' element={Account}></Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
