@@ -25,7 +25,7 @@ function CustomerContact() {
             <label className="contact-company">COMPANY NAME</label>
             <input className="contact-input" type="text" />
             <label className="contact-number">PHONE NUMBER</label>
-            <input className="contact-input" type="text" />
+            <input className="contact-input" type="tel" />
             <label className="contact-number">BUSINESS REGISTRATION #:</label>
             <input className="contact-input" type="text" />
             <label className="contact-number">BUSINESS ADDRESS</label>
