@@ -7,10 +7,8 @@ import CustomerContact from './pages/CustomerContact/CustomerContact';
 
 function App() {
   return (
-    <div>
     <BrowserRouter>
       <Routes>
-
         <Route path='/' element={<LoadingPage />}>Hello</Route>
         <Route path='/signup-bench-free-month-bookkeeping' element={''}></Route>
         <Route path='/company-details' element={''}></Route>
@@ -20,7 +18,6 @@ function App() {
         <Route path='/accounts' element={<Account/>}></Route>
       </Routes>
     </BrowserRouter>
-    </div>
   );
 }
 
