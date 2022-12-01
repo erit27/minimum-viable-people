@@ -17,6 +17,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin: 0 3rem;
   }
   &-logo{
     width: 5rem;
@@ -47,6 +48,7 @@
     padding: 1rem;
     border: 1.5px solid $white;
     border-radius: 8px;
+    border-color: rgb(228, 230, 233);
   }
   &-detail{
     width: 100%;
@@ -71,6 +73,7 @@
         padding: 1rem;
         border: 1.5px solid $white;
         border-radius: 8px;
+        border-color: rgb(228, 230, 233);
       }
     }
 
@@ -91,6 +94,7 @@
         padding: 1rem;
         border: 1.5px solid $white;
         border-radius: 8px;
+        border-color: rgb(228, 230, 233);
       }
     }
   }
@@ -103,6 +107,7 @@
       height: 100vh;
       width: 100%;
       padding-top: 6rem;
+      margin-right: 5rem;
 
     }
   }
@@ -112,6 +117,7 @@
     width: 100%;
     justify-content: space-between;
     align-items: center;
+    padding-top: 9rem;
   }
   &-btn{  
     width: 15%;
@@ -121,6 +127,7 @@
     border: none;
     border-radius: 4px;
     order: 1;
+    margin-bottom: 2rem;
   }
 }
 
