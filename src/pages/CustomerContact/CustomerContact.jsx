@@ -27,12 +27,25 @@ function CustomerContact() {
             <input className='contact-input'type="text" />
             <div className='contact-detail'>
               <div className='contact-detail__country'>
-                <label className='contact-detail__country-name'>STATE</label>
-                <input className='contact-detail__country-input' type="text"/>
+                <label className='contact-detail__country-name'>COUNTRY</label>
+                <select className='contact-detail__country-input'>
+                  <option value="">Select</option>
+                  <option value="1">Canada</option>
+                  <option value="2">United State</option>
+                </select>
               </div>
               <div className='contact-detail__time'>
-                <label className='contact-detail__time-zone'>CITY</label>
-                <input className='contact-detail__time-input'type="text" />
+                <label className='contact-detail__time-zone'>TIME ZONE</label>
+                <select className='contact-detail__time-input'>
+                  <option value="">Select</option>
+                  <option value="1">Pacific</option>
+                  <option value="2">Hawaii</option>
+                  <option value="3">Alaska</option>
+                  <option value="4">Mountain</option>
+                  <option value="5">Central</option>
+                  <option value="6">Eastern</option>
+                </select>
+               
               </div>
               <div className='contact-detail__time'>
                 <label className='contact-detail__time-zone'>ZIP CODE</label>

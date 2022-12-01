@@ -11,14 +11,22 @@
 .container {
     &-medium {
         display: flex;
-        background-color: white;
-        height: 100vh
+        justify-content: space-between;
+        background-color: $white;
+        height: 100vh;
+        // box-sizing: border-box;
+
     }
 
     &-large {
         display: flex;
         justify-content: space-between;
         flex-direction: column;
+        // padding: 1rem 2rem 4rem 4rem;
+        width: 100%;
+        // height: 100vh;
+       
+        
     }
 }
 
@@ -49,8 +57,6 @@
     }
 
     &__logo {
-        // height: 2rem;
-        width: 8.577rem;
         padding-bottom: 1rem;
 
         margin-left: 7rem;
@@ -70,7 +76,7 @@
     &__title {
         font-size: 1.5rem;
         font-weight: 700;
-        line-height: 2.25rem;
+        // line-height: 2.25rem;
         padding-bottom: 1rem;
         padding-left: 8rem;
     }
@@ -124,7 +130,7 @@
     &__button {
         background-color: rgb(10, 90, 194);
         color: rgb(255, 255, 255);
-        font-weight: 700;
+        // font-weight: 700;
         padding: .625rem 2rem;
         font-size: .875rem;
         border: none;
