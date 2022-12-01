@@ -73,11 +73,11 @@ img {
     display: flex;
     justify-content: space-between;
     margin: 0 4rem 1.5rem 0;
-    border-top: 3px solid grey;
     padding-top: 1rem;
     width: 95%;
-    margin-left: 4rem;
+    margin-left: 7rem;
     height: 4.2rem;
+    box-shadow: rgb(47 48 52 / 10%) 0px 1px 0px 0px inset;
 
     &__section {
         display: flex;
