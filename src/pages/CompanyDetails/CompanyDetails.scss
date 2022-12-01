@@ -87,13 +87,14 @@
 
 .next-page {
 
-    border-top: 1px solid black;
+    box-shadow: rgb(47 48 52 / 10%) 0px 1px 0px 0px inset;
     padding-top: 2rem;
     width: 100%;
     display: flex;
-    padding-right: 28rem;
+    padding-right: 10rem;
     height: 5rem;
     justify-content: flex-end;
+    margin-top: 3rem;
 
 
     &__title {
@@ -106,9 +107,12 @@
         font-weight: 700;
         padding: .625rem 2rem;
         font-size: .875rem;
-        margin-left: 15rem;
+        margin-left: 18rem;
         border: none;
         border-radius: .5rem;
+        width: 10rem;
+        height: 2.5rem;
+
 
     }
 }

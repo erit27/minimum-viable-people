@@ -4,21 +4,21 @@ import lars from '../../assets/image/lars-full.jpg'
 import ProgressBar from '../../components/ProgressBar/ProgressBar'
 import progress from '../../assets/image/Property 1=stage 1.png'
 import info from '../../assets/image/copy to replace Lars 1.png'
-import { useNavigate} from 'react-router-dom/dist';
+import { useNavigate } from 'react-router-dom/dist';
 
 function CompanyDetails() {
 
     const navigate = useNavigate();
-        const navigateHome = () => {
-            navigate('/')
-        }
-        function handleSubmit(event) {
-            event.preventDefault();
-            navigate('/book')
-        }
-        const navigateNext = () => {
-            navigate('/book')
-        }
+    const navigateHome = () => {
+        navigate('/')
+    }
+    function handleSubmit(event) {
+        event.preventDefault();
+        navigate('/book')
+    }
+    const navigateNext = () => {
+        navigate('/book')
+    }
 
     return (<>
         <div className='container'>
@@ -79,8 +79,8 @@ function CompanyDetails() {
                                 <div>
 
                                     <footer className='next-page'>
-                                    <ProgressBar/>
-                                        <button type='submit' className='next-page__button' >NEXT &#8594;</button>
+                                        <ProgressBar />
+                                        <button type='submit' className='next-page__button' >NEXT</button>
                                     </footer>
                                 </div>
 

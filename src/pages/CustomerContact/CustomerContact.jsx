@@ -4,7 +4,7 @@ import Image from '../../assets/image/copy to replace Lars 3.png';
 import { useNavigate, Link } from 'react-router-dom';
 import ProgressBar from "../../components/ProgressBar/ProgressBar";
 
-function CustomerContact (){
+function CustomerContact() {
   const navigate = useNavigate();
   const handleBtnClick = () => {
     navigate('/create-account')
@@ -20,31 +20,31 @@ function CustomerContact (){
             <label className='contact-company'>COMPANY NAME</label>
             <input className='contact-input' type="text" />
             <label className='contact-number'>PHONE NUMBER</label>
-            <input className='contact-input'type="text" />
+            <input className='contact-input' type="text" />
             <div className='contact-detail'>
               <div className='contact-detail__country'>
                 <label className='contact-detail__country-name'>COUNTRY</label>
-                <input className='contact-detail__country-input' type="text"/>
+                <input className='contact-detail__country-input' type="text" />
               </div>
               <div className='contact-detail__time'>
                 <label className='contact-detail__time-zone'>TIME ZONE</label>
-                <input className='contact-detail__time-input'type="text" />
+                <input className='contact-detail__time-input' type="text" />
               </div>
             </div>
           </form>
         </div>
-        
+
         <footer className="contact-footer">
           <button onClick={handleBtnClick} className='contact-btn'>NEXT</button>
           <ProgressBar />
         </footer>
-          
+
       </div>
       <div className='contact-img'>
         <img className='contact-img__lars' src={Image} alt="larsImage" />
       </div>
     </div>
-    
+
   )
 }
 
