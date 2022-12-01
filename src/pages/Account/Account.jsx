@@ -29,7 +29,7 @@ export default function Account() {
         <div className="main__header">
           <h1 className="main__header--heading">Great, now let's link your accounts</h1>
           <h3 className="main__header--subheading">
-            We'll be calling you on the next business day to help you set up your
+            TEXT TO CHANGE: We'll be calling you on the next business day to help you set up your
             free trial.
           </h3>
           <p>
@@ -63,7 +63,7 @@ export default function Account() {
       <footer className="footer-account">
         <ProgressBar/>
         <div className="footer-account__section">
-        <p className="footer-account__link">READY FOR A CHAT</p>
+        <p className="footer-account__link">TRIAL DASHBOARD</p>
         <button
           onClick={() => setOpenModal(true)}
           className="footer-account__btn"

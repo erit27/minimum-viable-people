@@ -1,7 +1,7 @@
 import '../../pages/CreateAccount/CreateAccount.scss';
 import Logo from '../../assets/logos/bench-logo.svg';
 import Image from '../../assets/image/copy to replace Lars 2.png';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import ProgressBar from "../../components/ProgressBar/ProgressBar";
 
 function CreateAccount (){
@@ -16,7 +16,7 @@ function CreateAccount (){
     <div className='account'>
       <div className='account-main'>
         <div className="account-top">
-          <img className='account-logo' src={Logo} alt="logo" />
+        <Link to='/'><img className='contact-logo' src={Logo} alt="logo" /></Link>
           <h1 className='account-title'>Create Your Bench account</h1>
           <p className='account-paragraph'>Review your account details and create a password.</p>
           <form className='account-form'>
