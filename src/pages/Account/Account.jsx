@@ -1,10 +1,19 @@
 import "./Account.scss";
+import Safe from "../../assets/icons/safe.png";
+import Wallet from "../../assets/icons/wallet.png";
+import Lock from "../../assets/icons/lock.png";
+import Logout from "../../assets/icons/logout.png";
+import Logo from "../../assets/icons/logo.png";
+import { useState } from "react";
+import Modal from "../../components/Modal/Modal";
+
 export default function Account() {
+    const [openModal, setOpenModal] = useState(false)
   return (
     <div>
       <div className="">
-        <img src="" alt="logo" />
-        <img src="" alt="logout" />
+        <img src={Logo} alt="logo" />
+        <img src={Logout} alt="logout" />
       </div>
       <div>
         <h1>Great, now let's link your accounts</h1>
@@ -19,15 +28,15 @@ export default function Account() {
         </p>
       </div>
       <div>
-        <img src="" alt="safe" />
+        <img src={Safe} alt="safe" />
         <p>We never store your bank account credentials</p>
       </div>
       <div>
-        <img src="" alt="lock" />
+        <img src={Lock} alt="lock" />
         <p>We encrypt data with the same level of security as online banking</p>
       </div>
       <div>
-        <img src="" alt="wallet" />
+        <img src={Wallet} alt="wallet" />
         <p>You'll have the ability to disconnect personal accounts</p>
       </div>
       <div>
@@ -37,6 +46,11 @@ export default function Account() {
           banking? We can help wtih that too!
         </p>
       </div>
+      <footer>
+        <p>READY FOR A CHAT</p>
+        <button onClick={setOpenModal(true)}> LINK BUSINESS ACCOUNTS</button>
+      </footer>
+      <Modal/>
     </div>
   );
 }
