@@ -29,10 +29,13 @@ export default function Account() {
         <div className="main__header">
           <h1 className="main__header--heading">Great, now let's link your accounts</h1>
           <h3 className="main__header--subheading">
-          To get full use of the Bench platform, we recommended you link your bank account to your dashboard.
+            To get full use of the Bench platform, we recommend you link your bank account.
           </h3>
           <p>
-            Please note:
+            Connecting your bank account gives your
+            bookkeeping team access to your transaction history and account
+            statements—nothing more. We'll use these connections to complete
+            your free month of bookkeeping.
           </p>
         </div>
         <div className="main__fact">
@@ -50,24 +53,26 @@ export default function Account() {
         </div>
         <div className="main__block">
           <p className="main__block--text">
-            Can't find your institution, or having trouble linking? No worries,
-            we'll cover this on our call. Need to set up a business specific
-            banking? We can help wtih that too!
+            Can't find your institution, or having trouble linking?
+            We'll reach out to get that sorted. Need to set up specific banking?
+            We can help with that too!
+
+
           </p>
         </div>
       </div>
       <img className="example-img" src={Example} alt="example app" />
       <footer className="footer-account">
-        <ProgressBar/>
+        <ProgressBar />
         <div className="footer-account__section">
-        <p className="footer-account__link">TRIAL DASHBOARD</p>
-        <button
-          onClick={() => setOpenModal(true)}
-          className="footer-account__btn"
-        >
-          {" "}
-          LINK BUSINESS ACCOUNTS
-        </button>
+          <p className="footer-account__link">TRIAL DASHBOARD</p>
+          <button
+            onClick={() => setOpenModal(true)}
+            className="footer-account__btn"
+          >
+            {" "}
+            LINK BUSINESS ACCOUNTS
+          </button>
         </div>
       </footer>
       {openModal && <Modal click={setOpenModal} />}

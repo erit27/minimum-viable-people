@@ -4,7 +4,7 @@ import Image from '../../assets/image/call-expert.png';
 import { useNavigate, Link } from 'react-router-dom';
 import ProgressBar from "../../components/ProgressBar/ProgressBar";
 
-function CustomerContact (){
+function CustomerContact() {
   const navigate = useNavigate();
   const handleBtnClick = () => {
     navigate('/create-account')
@@ -53,18 +53,18 @@ function CustomerContact (){
             </div>
           </form>
         </div>
-        
+
         <footer className="contact-footer">
           <button onClick={handleBtnClick} className='contact-btn'>NEXT</button>
           <ProgressBar />
         </footer>
-          
+
       </div>
       <div className='contact-img'>
         <img className='contact-img__lars' src={Image} alt="larsImage" />
       </div>
     </div>
-    
+
   )
 }
 

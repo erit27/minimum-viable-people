@@ -4,17 +4,15 @@
 @use '../../styles/partials/typography' as *;
 
 .progress {
-    padding-top: 1rem;
-    width: 80%
+    width: 100%;
+
 }
 
 .container {
     &-medium {
         display: flex;
-        justify-content: space-between;
         background-color: white;
-        height: 100vh;
-
+        height: 100vh
     }
 
     &-large {
@@ -31,19 +29,22 @@
     flex-direction: column;
     align-items: flex-start;
     max-width: 36.25rem;
-    margin: 0px auto;
+    margin: 0px;
     padding-top: 2rem;
+
 
     &__sub {
         font-size: 0.875rem;
         font-weight: 450;
         letter-spacing: .15em;
         margin-bottom: .5rem;
+        padding-left: 8rem;
 
         &-info {
             color: rgb(142, 145, 152);
             font-size: .875rem;
             padding: 0.125rem 0rem;
+            padding-left: 8rem;
         }
     }
 
@@ -51,11 +52,19 @@
         // height: 2rem;
         width: 8.577rem;
         padding-bottom: 1rem;
+
+        margin-left: 7rem;
+
+
     }
 
     &__lars {
         width: 24.75rem;
-        height: 100%;
+        height: 49.45rem;
+        margin-left: 24.4rem;
+
+
+
     }
 
     &__title {
@@ -63,6 +72,7 @@
         font-weight: 700;
         line-height: 2.25rem;
         padding-bottom: 1rem;
+        padding-left: 8rem;
     }
 
 
@@ -70,6 +80,7 @@
         font-size: 1rem;
         font-weight: 600;
         padding-bottom: 1rem;
+        padding-left: 8rem;
     }
 
     &__selector {
@@ -83,6 +94,7 @@
         background-color: rgb(247, 248, 250);
         margin-bottom: 1rem;
         padding-left: .5rem;
+        margin-left: 8rem;
 
     }
 }
@@ -93,13 +105,16 @@
 
 .next-page {
 
-    border-top: 1px solid black;
+    box-shadow: rgb(47 48 52 / 10%) 0px 1px 0px 0px inset;
     padding-top: 2rem;
     width: 100%;
     display: flex;
-    padding-right: 28rem;
-    height: 5rem;
-    justify-content: flex-end;
+    position: absolute;
+    bottom: 0;
+    height: 7rem;
+    z-index: 1;
+    background-color: white;
+
 
 
     &__title {
@@ -112,9 +127,12 @@
         font-weight: 700;
         padding: .625rem 2rem;
         font-size: .875rem;
-        margin-left: 15rem;
         border: none;
         border-radius: .5rem;
+        width: 10rem;
+        height: 2.5rem;
+        margin-left: -36rem;
+
 
     }
 }

@@ -4,43 +4,50 @@
 
 
 
-.contact{
+.contact {
   display: flex;
   flex-direction: row;
   justify-content: center;
   width: 100%;
 
 
-  &-main{
+  &-main {
     padding: 1rem 2rem 4rem 4rem;
     max-width: 75%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
-  &-logo{
+
+  &-logo {
     width: 5rem;
     height: 3rem;
   }
-  &-title{
-    font-weight:bold ;
+
+  &-title {
+    font-weight: bold;
     padding-bottom: 1rem;
   }
-  &-paragraph{
+
+  &-paragraph {
     padding-bottom: 1rem;
     font-size: 16px;
   }
-  &-form{
+
+  &-form {
     width: 100%;
     margin-bottom: 1rem;
   }
-  &-company{
+
+  &-company {
     font-size: 14px;
   }
-  &-number{
+
+  &-number {
     font-size: 14px;
   }
-  &-input{
+
+  &-input {
     width: 100%;
     height: 4rem;
     margin: .5rem 0 1rem 0;
@@ -49,15 +56,16 @@
     border: 1.5px solid $white;
     border-radius: 8px;
   }
-  &-detail{
+
+  &-detail {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 
-    
 
-    &__country{
+
+    &__country {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -66,7 +74,8 @@
       &-name{
         font-size: 14px;
       }
-      &-input{
+
+      &-input {
         height: 4rem;
         margin: .5rem 0 1rem 0;
         background-color: $white;
@@ -76,18 +85,18 @@
       }
     }
 
-    &__time{
+    &__time {
       display: flex;
       flex-direction: column;
       width: 33%;
       margin-left: 1rem;
 
-      &-zone{
+      &-zone {
         font-size: 14px;
       }
-      
 
-      &-input{
+
+      &-input {
         height: 4rem;
         margin: .5rem 0 1rem 0;
         background-color: $white;
@@ -98,16 +107,18 @@
     }
   }
 
-  &-img{
-    background-color:$white;
 
-    &__lars{
+  &-img {
+    background-color: $white;
+
+    &__lars {
       height: 100vh;
       width: 100%;
       padding-top: 6rem;
 
     }
   }
+
   &-footer {
     display: flex;
     flex-direction: row;
@@ -122,7 +133,8 @@
     padding-right: 24rem;
 
   }
-  &-btn{  
+
+  &-btn {
     width: 15%;
     height: 2.5rem;
     background-color: $skyblue;
@@ -130,6 +142,7 @@
     border: none;
     border-radius: 4px;
     order: 1;
+    font-weight: 700;
   }
 
   &-wrap {
