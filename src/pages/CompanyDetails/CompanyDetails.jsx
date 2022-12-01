@@ -1,20 +1,25 @@
 import './CompanyDetails.scss'
 import logo from '../../assets/logos/bench-logo.svg'
+import lars from '../../assets/image/lars-full.jpg'
+import ProgressBar from '../../components/ProgressBar/ProgressBar'
 import progress from '../../assets/image/Property 1=stage 1.png'
 import info from '../../assets/image/copy to replace Lars 1.png'
-import { useNavigate } from 'react-router-dom/dist'
-const navigate = useNavigate
-const navigateHome = () => {
-    navigate('/')
-}
-function handleSubmit(event) {
-    event.preventDefault();
-    navigate('/book')
-}
-const navigateNext = () => {
-    navigate('/book')
-}
+import { useNavigate} from 'react-router-dom/dist';
+
 function CompanyDetails() {
+
+    const navigate = useNavigate();
+        const navigateHome = () => {
+            navigate('/')
+        }
+        function handleSubmit(event) {
+            event.preventDefault();
+            navigate('/book')
+        }
+        const navigateNext = () => {
+            navigate('/book')
+        }
+
     return (<>
         <div className='container'>
             <div className='container-large'>
@@ -74,7 +79,7 @@ function CompanyDetails() {
                                 <div>
 
                                     <footer className='next-page'>
-                                        <img src={progress} alt="" className='progress' />
+                                    <ProgressBar/>
                                         <button type='submit' className='next-page__button' >NEXT &#8594;</button>
                                     </footer>
                                 </div>
@@ -86,6 +91,7 @@ function CompanyDetails() {
                         <img src={info} alt="" className='company-details__lars' />
                     </div>
                 </div>
+
             </div>
         </div>
     </>)
