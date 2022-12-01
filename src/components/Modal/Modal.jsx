@@ -8,7 +8,38 @@ export default function Modal () {
             <div>
                 <div>
                     <div>
-                        <img src={Exit} alt="" />
+                        <img src={Exit} alt="exit" />
+                    </div>
+                    <div>
+                        <img src={Plaid} alt="plaid logo" />
+                    </div>
+                    <div>
+                        <p>Bench Accounting uses <strong>Plaid</strong> to connect your account</p>
+                    </div>
+                    <div>
+                        <div>
+                        <img src={Connect} alt="connect" />
+                        </div>
+                        <div>
+                            <h3>Connect effortlessly</h3>
+                            <p>Plaid lets you securely connect your financial accounts in seconds</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <img src={Privacy} alt="privacy eye" />
+                        </div>
+                        <div>
+                            <h3>Your data belongs to you</h3>
+                            <p>Plaid doesn't sell your personal info, and will only use it with your permision</p>
+                        </div>
+                    </div>
+                    <div>
+                    <div>
+                        <p>By selecting "Continue" you agree to the</p>
+                        <p>Plaid End User Privacy Policy</p>
+                    </div>
+                    <button>Continue</button>
                     </div>
                 </div>
             </div>

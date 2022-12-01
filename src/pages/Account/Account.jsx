@@ -4,18 +4,20 @@ import Wallet from "../../assets/icons/wallet.png";
 import Lock from "../../assets/icons/lock.png";
 import Logout from "../../assets/icons/logout.png";
 import Logo from "../../assets/icons/logo.png";
+import Example from "../../assets/image/example.png"
 import { useState } from "react";
 import Modal from "../../components/Modal/Modal";
 
 export default function Account() {
     const [openModal, setOpenModal] = useState(false)
   return (
-    <div>
-      <div className="">
+    <div className="account">
+      <div className="account__sidebar-left">
         <img src={Logo} alt="logo" />
         <img src={Logout} alt="logout" />
       </div>
-      <div>
+    <div className="main">
+      <div className="main__header">
         <h1>Great, now let's link your accounts</h1>
         <h3>
           We'll be calling you on the next business day to help you set up your
@@ -46,11 +48,13 @@ export default function Account() {
           banking? We can help wtih that too!
         </p>
       </div>
-      <footer>
+      </div>
+      <img className="example-img" src={Example} alt="example app" />
+      <footer className="footer-account">
         <p>READY FOR A CHAT</p>
-        <button onClick={setOpenModal(true)}> LINK BUSINESS ACCOUNTS</button>
+        <button className="footer-account__btn"> LINK BUSINESS ACCOUNTS</button>
       </footer>
-      <Modal/>
+      {/* <Modal/> */}
     </div>
   );
 }
