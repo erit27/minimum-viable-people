@@ -19,6 +19,7 @@ export default function ProgressBar (){
     ]
     return(
     <div class="stepper-wrapper">
+    
       <Link className="stepper-item completed">
         <div className="step-counter"><img src={check} alt="1" />{steps.counter}</div>
         <div className="step-name">Company Details</div>

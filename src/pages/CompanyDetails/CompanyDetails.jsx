@@ -77,7 +77,7 @@ function CompanyDetails() {
                                 <div>
 
                                     <footer className='next-page'>
-                                        <img src={progress} alt="" className='progress' />
+                                    <ProgressBar/>
                                         <button type='submit' className='next-page__button' >NEXT &#8594;</button>
                                     </footer>
                                 </div>
@@ -90,12 +90,6 @@ function CompanyDetails() {
                     </div>
                 </div>
 
-
-
-                <footer className='next-page'>
-                    <ProgressBar/>
-                    <button className='next-page__button'>NEXT &#8594;</button>
-                </footer>
             </div>
         </div>
     </>)
