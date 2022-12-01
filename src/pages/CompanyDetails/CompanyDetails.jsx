@@ -72,14 +72,14 @@ function CompanyDetails() {
                                     <option value='4'>My business is new</option>
                                     <option value='5'>I'm not sure</option>
                                 </select>
-                                <div>
 
-                                    <footer className='next-page'>
+
+                                <footer className='next-page'>
+                                    <div className='progress'>
                                         <ProgressBar />
-                                        <button type='submit' className='next-page__button' >NEXT</button>
-                                    </footer>
-                                </div>
-
+                                    </div>
+                                    <button type='submit' className='next-page__button' >NEXT</button>
+                                </footer>
                             </div>
                         </form>
                     </div>
