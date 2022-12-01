@@ -1,6 +1,6 @@
 import './CompanyDetails.scss'
 import logo from '../../assets/logos/bench-logo.svg'
-import lars from '../../assets/image/copy to replace Lars 1.png'
+import info from '../../assets/image/copy to replace Lars 1.png'
 import { useNavigate } from 'react-router-dom/dist'
 const navigate = useNavigate
 const navigateHome = () => {
@@ -14,7 +14,6 @@ function CompanyDetails() {
         <div className='container'>
             <div className='container-large'>
                 <div className='container-medium'>
-
                     <div className='company-details'>
                         <img src={logo} alt="Bench Company Logo" className='company-details__logo' onClick={navigateHome} />
 
@@ -66,18 +65,17 @@ function CompanyDetails() {
                                 <option value='4'>My business is new</option>
                                 <option value='5'>I'm not sure</option>
                             </select>
+                            <div>
+                                <footer className='next-page'>
+                                    <button className='next-page__button' onClick={navigateNext}>NEXT &#8594;</button>
+                                </footer>
+                            </div>
                         </div>
                     </div>
                     <div>
-                        <img src={lars} alt="" className='company-details__lars' />
+                        <img src={info} alt="" className='company-details__lars' />
                     </div>
                 </div>
-
-
-
-                <footer className='next-page'>
-                    <button className='next-page__button' onClick={navigateNext}>NEXT &#8594;</button>
-                </footer>
             </div>
         </div>
     </>)
