@@ -25,9 +25,9 @@ export default function GetStarted() {
               placeholder='Email'
               className='getStarted__input' />
             <button type='submit' className='getStarted__button'>Start a Free Trial</button>
-          </div>
+          </div> 
         </form>
-        <div className="getStarted__finePrint">No credit check required. By clicking 'Start a Free Trial', I agree to Bench's Terms & Privacy Policy</div>
+        <div className="getStarted__finePrint">No credit card required. By clicking 'Start a Free Trial', I agree to Bench's Terms & Privacy Policy</div>
         <div className="getStarted__login"><p className="getStarted__login--white">Already have an account?</p><a href="/" className="getStarted__login--turq">  Log in here.</a></div>
       </div>
     </>

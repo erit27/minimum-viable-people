@@ -65,6 +65,7 @@
         padding-bottom: 1rem;
     }
 
+
     &__description {
         font-size: 1rem;
         font-weight: 600;
@@ -82,7 +83,12 @@
         background-color: rgb(247, 248, 250);
         margin-bottom: 1rem;
         padding-left: .5rem;
+
     }
+}
+.invalid{
+    border: 1px solid red;
+    outline: none;
 }
 
 .next-page {
